@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": {
+            "presets": [
+                ["@babel/preset-env", {
+                    "targets": {
+                        "browsers": "last 100 versions, ie 10-11"
+                    },
+                    "modules": "commonjs"
+                }]
+            ],
+	    "plugins": [
+    		"@babel/plugin-syntax-object-rest-spread",
+    		"@babel/plugin-transform-class-properties",
+	        ]
+        },
+        "module": {
+            "presets": [],
+	    "plugins": [
+    		"@babel/plugin-syntax-object-rest-spread",
+    		"@babel/plugin-transform-class-properties",
+	    ]
+        }
+    },
+    "sourceMaps": true
+}

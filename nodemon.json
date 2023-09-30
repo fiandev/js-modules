@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "watch": [" ./src/**/*.{js,ts}"],
+  "ignore": ["./node_modules/**/*.js"],
+  "execMap": {
+    "js": "npm run build"
+  }
+}

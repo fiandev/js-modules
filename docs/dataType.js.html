@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: dataType.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: dataType.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+/**
+ * @function getType
+ * function to get real data type 
+ * @param {any} any - anyting to check the data type
+ * @returns {string} data type name
+ */
+export function getType (any) {
+  if (typeof any === "object" &amp;&amp; Array.isArray(any)) return "array";
+  if (typeof any === "object" &amp;&amp; !Array.isArray(any) &amp;&amp; any === null) return "null";
+  if (typeof any === "object" &amp;&amp; !Array.isArray(any) &amp;&amp; any !== null) return "object";
+  if (typeof any === "number" &amp;&amp; Number.isNaN(any)) return "NaN";
+  
+  /**
+   * if all conditions are met, return whatever value the 'typeof' function returns
+   * excepted type of data {string,number,function|undefined|boolean}
+   */
+  return typeof any;
+}
+
+export function getIntermediateType (any) {
+  let type = getType(any);
+  
+  if (type === "number") {
+    return isFloat(any) ? "float" : "integer";
+  }
+  if (type === "array") {
+    if (isArrayOfString(any)) return "string[]";
+    if (isArrayOfArray(any)) return "array[]";
+    if (isArrayOfObject(any)) return "object[]";
+    if (isArrayOfNull(any)) return "null[]";
+    if (isArrayOfBoolean(any)) return "boolean[]";
+    if (isArrayOfNumber(any)) return "number[]";
+  }
+  
+  return type;
+}
+
+/**
+ * @function isFunction
+ * function to check the variable type is function or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isFunction (any) {
+  return getType(any) === "function";
+}
+
+/**
+ * @function isArray
+ * function to check the variable type is array or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isArray (any) {
+  return getType(any) === "array";
+}
+
+/**
+ * @function arrayOfDataType
+ * function to check if all items in the array is have same data type
+ * @param {Array} array - the array whose item type data will be checked
+ * @param {string} type - name of data type to checked
+ * @returns {boolean}
+ */
+export function arrayOfDataType (array, type) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  if (!isString(type)) throw new Error(`parameter 2 must string, '${ getType(type) }' given !`);
+  
+  for (let item of array) {
+    if (getType(item) !== type) return false;
+  }
+  
+  return true;
+}
+
+/**
+ * @function isArrayOfString
+ * function to check all items in array have string data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfString (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "string");
+}
+
+/**
+ * @function isArrayOfNumber
+ * function to check all items in array have number data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfNumber (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "number");
+}
+
+/**
+ * @function isArrayOfObject
+ * function to check all items in array have object data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfObject (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "object");
+}
+
+/**
+ * @function isArrayOfArray
+ * function to check all items in array have string data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfArray (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "array");
+}
+
+/**
+ * @function isArrayOfNull
+ * function to check all items in array have null data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfNull (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "null");
+}
+
+/**
+ * @function isArrayOfBoolean
+ * function to check all items in array have boolean data type or not
+ * @param {Array} array - the array whose item type data will be checked
+ * @returns {boolean}
+ */
+export function isArrayOfBoolean (array) {
+  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
+  
+  return arrayOfDataType(array, "boolean");
+}
+
+/**
+ * @function isObject
+ * function to check the variable type is object or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isObject (any) {
+  return getType(any) === "object";
+}
+
+/**
+ * @function isNull
+ * function to check the variable type is null or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isNull (any) {
+  return getType(any) === "null";
+}
+
+/**
+ * @function isUndefined
+ * function to check the variable type is undefined or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isUndefined (any) {
+  return getType(any) === "undefined";
+}
+
+/**
+ * @function isBoolean
+ * function to check the variable type is boolean or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isBoolean (any) {
+  return getType(any) === "";
+}
+
+/**
+ * @function isNumber
+ * function to check the variabel is number or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isNumber(any) {
+  return getType(any) === "number";
+}
+
+/**
+ * @function isInteger
+ * function to check the number is integer or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isInteger (any) {
+  return getType(any) === "number" &amp;&amp; any % 1 === 0;
+}
+
+/**
+ * @function isInteger
+ * function to check the number is float or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isFloat (any) {
+  return getType(any) === "number" &amp;&amp; any % 1 > 0;
+}
+
+/**
+ * @function isString
+ * function to check the variable type is string or not
+ * @param {any} any - anyting to check the data type
+ * @returns {boolean}
+ */
+export function isString (any) {
+  return getType(any) === "string";
+}
+
+export function isContainTypes (any, types) {
+  if (!["string", "array"].includes(getType(types))) throw `parameter 2 must be type string|array, '${ getType(types) }'' given !`;
+  
+  let dataTypes = [];
+  let SPLITTER_REGEX = /(\||\,|\s)/g;
+  
+  if (!isString(types)) dataTypes = types.split(SPLITTER_REGEX);
+  
+  return dataTypes.includes(getIntermediateType(any));
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#alphabetsfunctiontogeneratealphabets">alphabets
+function to generate alphabets</a></li><li><a href="global.html#arrayNumbersfunctiontorandomizeiteminthearray">arrayNumbers
+function to randomize item in the array</a></li><li><a href="global.html#arrayOfDataTypefunctiontocheckifallitemsinthearrayishavesamedatatype">arrayOfDataType
+function to check if all items in the array is have same data type</a></li><li><a href="global.html#arrayToStringfunctiontotransformarraytostring">arrayToString
+function to transform array to string</a></li><li><a href="global.html#clearNecessarySpaceOnBacktickfunctiontoclearnecessaryspaceonmultilinebacktickstring">clearNecessarySpaceOnBacktick
+function to clear necessary space on multiline backtick string</a></li><li><a href="global.html#countArrayDimentionfunctiontocheckdimensionofthearray">countArrayDimention
+function to check dimension of the array</a></li><li><a href="global.html#deletefunctiontogetrandomstringwithspesificlengthofstring">delete
+function to get random string with spesific length of string</a></li><li><a href="global.html#getTypefunctiontogetrealdatatype">getType
+function to get real data type</a></li><li><a href="global.html#inArrayfunctiontocheckitemiscontainedinthearray">inArray
+function to check item is contained in the array</a></li><li><a href="global.html#invalidValueExceptionfunctiontogenerateexceptiononinvalidValue">invalidValueException
+function to generate exception on invalidValue</a></li><li><a href="global.html#isArrayfunctiontocheckthevariabletypeisarrayornot">isArray
+function to check the variable type is array or not</a></li><li><a href="global.html#isArrayOfArrayfunctiontocheckallitemsinarrayhavestringdatatypeornot">isArrayOfArray
+function to check all items in array have string data type or not</a></li><li><a href="global.html#isArrayOfBooleanfunctiontocheckallitemsinarrayhavebooleandatatypeornot">isArrayOfBoolean
+function to check all items in array have boolean data type or not</a></li><li><a href="global.html#isArrayOfNullfunctiontocheckallitemsinarrayhavenulldatatypeornot">isArrayOfNull
+function to check all items in array have null data type or not</a></li><li><a href="global.html#isArrayOfNumberfunctiontocheckallitemsinarrayhavenumberdatatypeornot">isArrayOfNumber
+function to check all items in array have number data type or not</a></li><li><a href="global.html#isArrayOfObjectfunctiontocheckallitemsinarrayhaveobjectdatatypeornot">isArrayOfObject
+function to check all items in array have object data type or not</a></li><li><a href="global.html#isArrayOfStringfunctiontocheckallitemsinarrayhavestringdatatypeornot">isArrayOfString
+function to check all items in array have string data type or not</a></li><li><a href="global.html#isBooleanfunctiontocheckthevariabletypeisbooleanornot">isBoolean
+function to check the variable type is boolean or not</a></li><li><a href="global.html#isFunctionfunctiontocheckthevariabletypeisfunctionornot">isFunction
+function to check the variable type is function or not</a></li><li><a href="global.html#isIntegerfunctiontocheckthenumberisfloatornot">isInteger
+function to check the number is float or not</a></li><li><a href="global.html#isIntegerfunctiontocheckthenumberisintegerornot">isInteger
+function to check the number is integer or not</a></li><li><a href="global.html#isNullfunctiontocheckthevariabletypeisnullornot">isNull
+function to check the variable type is null or not</a></li><li><a href="global.html#isNumberfunctiontocheckthevariabelisnumberornot">isNumber
+function to check the variabel is number or not</a></li><li><a href="global.html#isObjectfunctiontocheckthevariabletypeisobjectornot">isObject
+function to check the variable type is object or not</a></li><li><a href="global.html#isStringfunctiontocheckthevariabletypeisstringornot">isString
+function to check the variable type is string or not</a></li><li><a href="global.html#isUndefinedfunctiontocheckthevariabletypeisundefinedornot">isUndefined
+function to check the variable type is undefined or not</a></li><li><a href="global.html#maxValueExceptionfunctiontogenerateexceptiononmaxValue">maxValueException
+function to generate exception on maxValue</a></li><li><a href="global.html#objectKeysfunctiontogetallkeysoftheobject">objectKeys
+function to get all keys of the object</a></li><li><a href="global.html#objectValuesfunctiontogetallkeys&valuesoftheobject">objectValues
+function to get all keys & values of the object</a></li><li><a href="global.html#objectValuesfunctiontogetallvaluesoftheobject">objectValues
+function to get all values of the object</a></li><li><a href="global.html#randomIntegerfunctiontogetrandomintegerbetweenmin-maxvalue">randomInteger
+function to get random integer between min - max value</a></li><li><a href="global.html#randomStringfunctiontogetrandomstringwithspesificlengthofstring">randomString
+function to get random string with spesific length of string</a></li><li><a href="global.html#randomizefunctiontorandomizeiteminthearray">randomize
+function to randomize item in the array</a></li><li><a href="global.html#splitArrayfunctiontosplitanarrayintoseveralparts">splitArray
+function to split an array into several parts</a></li><li><a href="global.html#stringToArrayfunctiontosplitstringtoarray">stringToArray
+function to split string to array</a></li><li><a href="global.html#typeErrorExceptionfunctiontogenerateexceptionontypeError">typeErrorException
+function to generate exception on typeError</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Sep 30 2023 14:28:43 GMT+0700 (Western Indonesia Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

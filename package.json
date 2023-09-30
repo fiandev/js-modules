@@ -1,0 +1,59 @@
+{
+  "name": "@fiandev/js-modules",
+  "version": "0.0.1",
+  "description": "a complex javascript kit and algorithm",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest",
+    "watch:test": "node --experimental-vm-modules node_modules/jest/bin/jest --watchAll",
+    "build:module": "npx babel src --out-dir dist/module --env-name module",
+    "build:browser": "npx babel src --out-dir dist/main --env-name browser",
+    "build": "npm run build:module && npm run build:browser",
+    "watch:build": "nodemon",
+    "jsdoc": "jsdoc -r ./src --destination ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiandev/js-modules.git"
+  },
+  "keywords": [
+    "js",
+    "library",
+    "javascript",
+    "tools"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "fiandev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiandev/js-modules/issues"
+  },
+  "homepage": "https://github.com/fiandev/js-modules#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-class-properties": "^7.22.5",
+    "@babel/preset-env": "^7.22.20",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.2"
+  },
+  "files": [
+    "build/main",
+    "build/module",
+    "!**/*.test.*",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
