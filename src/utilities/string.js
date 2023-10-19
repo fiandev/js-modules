@@ -7,14 +7,17 @@ import { typeErrorException } from "./exceptions.js";
  * @param {string} str - string to clear their space
  * @returns {string} clear string after trimed
  */
-export function clearNecessarySpaceOnBacktick (str) {
-  if (getType(str) !== "string") throw new Error (`parameter str must be typeof string, ${ getType(str) } given`);
-  
+export function clearNecessarySpaceOnBacktick(str) {
+  if (getType(str) !== "string")
+    throw new Error(
+      `parameter str must be typeof string, ${getType(str)} given`,
+    );
+
   let lines = str.split("\n");
   let result = "";
-  
+
   for (let line of lines) {
-    result += `${ line.trimStart() }\n`;
+    result += `${line.trimStart()}\n`;
   }
   return result;
 }
@@ -26,21 +29,21 @@ export function clearNecessarySpaceOnBacktick (str) {
  * @param {(string|string[])} options.except - exception characters
  * @returns {string} string of alphabets
  */
-export function alphabets ({ except }) {
-  if (getType(except) !== "string" || getType(except) !== "array") throw typeErrorException(except, "string | array");
-  
+export function alphabets({ except }) {
+  if (getType(except) !== "string" || getType(except) !== "array")
+    throw typeErrorException(except, "string | array");
+
   let result = "";
   let exceptions = [];
-  
+
   if (getType(except) === "string") exceptions = except.split("");
   else exceptions = except;
-  
-  for (let i = 'a'.charCodeAt(0); i <= 'z'.charCodeAt(0); i++) {
+
+  for (let i = "a".charCodeAt(0); i <= "z".charCodeAt(0); i++) {
     let character = String.fromCharCode(i);
-    
+
     if (!exceptions.includes(character)) result += character;
   }
-  
+
   return result;
 }
-

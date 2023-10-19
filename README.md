@@ -1,5 +1,5 @@
 # js-modules
-A Complex Javascript Modules And Algorithm
+A gathering Javascript Modules And Algorithm
 
 ## installation
 

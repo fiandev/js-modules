@@ -2,9 +2,9 @@ import { isUndefined } from "../utilities/dataType.js";
 import { inArray } from "../utilities/array.js";
 
 export default class Tuple {
-  constructor (...anythings) {
+  constructor(...anythings) {
     this.values = [];
-    
+
     let dumpValues = [];
     for (let anything of anythings) {
       if (!inArray(anything, dumpValues)) {
@@ -13,20 +13,20 @@ export default class Tuple {
       }
     }
   }
-  
-  reset () {
+
+  reset() {
     this.values = [];
-    
+
     return this.values;
   }
-  
-  copy () {
+
+  copy() {
     return this;
   }
-  
-  reverse () {
+
+  reverse() {
     this.values.reverse();
-    
+
     return this.values;
   }
 }

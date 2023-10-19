@@ -1,4 +1,4 @@
-import { getType, isUndefined, isArray } from "./dataType.js"; 
+import { getType, isUndefined, isArray } from "./dataType.js";
 import { typeErrorException, invalidValueException } from "./exceptions.js";
 
 /**
@@ -8,7 +8,7 @@ import { typeErrorException, invalidValueException } from "./exceptions.js";
  * @param {string} [splitter=] splitter - character to split the string to array
  * @returns {any} random item on items
  */
-export function stringToArray (str, splitter = "") {
+export function stringToArray(str, splitter = "") {
   if (getType(str) !== "string") throw typeErrorException(arr, "string");
   if (getType(splitter) !== "string") throw typeErrorException(arr, "string");
   return str.split(splitter);
@@ -20,9 +20,9 @@ export function stringToArray (str, splitter = "") {
  * @param {Array} arr - array to transform
  * @returns {string} string of result
  */
-export function arrayToString (arr) {
+export function arrayToString(arr) {
   if (getType(except) !== "array") throw typeErrorException(arr, "array");
-  
+
   return arr.toString().replace(/\,/g, "");
 }
 
@@ -34,12 +34,16 @@ export function arrayToString (arr) {
  * @returns {boolean}
  */
 export function inArray(needle, haystack) {
-  if ((!isUndefined(needle) && isUndefined(haystack)) || (!isUndefined(haystack) && !isArray(haystack))) throw typeErrorException(haystack, "array");
-  
-  for(let i = 0; i < haystack.length; i++) {
-    if(haystack[i] === needle) return true;
+  if (
+    (!isUndefined(needle) && isUndefined(haystack)) ||
+    (!isUndefined(haystack) && !isArray(haystack))
+  )
+    throw typeErrorException(haystack, "array");
+
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === needle) return true;
   }
-  
+
   return false;
 }
 
@@ -49,15 +53,15 @@ export function inArray(needle, haystack) {
  * @param {Array} array - the array whose dimension will be counted
  * @returns {number} total dimension of the array
  */
-export function countArrayDimention (array) {
+export function countArrayDimention(array) {
   if (!isArray(array)) throw typeErrorException(array, "array");
-  
+
   let counter = array.length;
-  
+
   for (let item of array) {
     counter += isArray(item) ? countArrayDimention(item) : 0;
   }
-  
+
   return counter;
 }
 
@@ -70,12 +74,13 @@ export function countArrayDimention (array) {
  */
 export function splitArray(array, numberOfParts = 1) {
   if (!isArray(array)) throw typeErrorException(array, "array");
-  if (!isInteger(numberOfParts)) throw typeErrorException(numberOfParts, "number|integer");
+  if (!isInteger(numberOfParts))
+    throw typeErrorException(numberOfParts, "number|integer");
   if (numberOfParts <= 0) throw `the numberOfParts must be greater than 0`;
-  
+
   const partLength = Math.ceil(array.length / numberOfParts);
   const resultParts = [];
-  
+
   for (let i = 0; i < numberOfParts; i++) {
     const start = i * partLength;
     const end = (i + 1) * partLength;

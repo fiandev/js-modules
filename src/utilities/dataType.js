@@ -1,16 +1,17 @@
-
 /**
  * @function getType
- * function to get real data type 
+ * function to get real data type
  * @param {any} any - anyting to check the data type
  * @returns {string} data type name
  */
-export function getType (any) {
+export function getType(any) {
   if (typeof any === "object" && Array.isArray(any)) return "array";
-  if (typeof any === "object" && !Array.isArray(any) && any === null) return "null";
-  if (typeof any === "object" && !Array.isArray(any) && any !== null) return "object";
+  if (typeof any === "object" && !Array.isArray(any) && any === null)
+    return "null";
+  if (typeof any === "object" && !Array.isArray(any) && any !== null)
+    return "object";
   if (typeof any === "number" && Number.isNaN(any)) return "NaN";
-  
+
   /**
    * if all conditions are met, return whatever value the 'typeof' function returns
    * excepted type of data {string,number,function|undefined|boolean}
@@ -18,9 +19,9 @@ export function getType (any) {
   return typeof any;
 }
 
-export function getIntermediateType (any) {
+export function getIntermediateType(any) {
   let type = getType(any);
-  
+
   if (type === "number") {
     return isFloat(any) ? "float" : "integer";
   }
@@ -32,7 +33,7 @@ export function getIntermediateType (any) {
     if (isArrayOfBoolean(any)) return "boolean[]";
     if (isArrayOfNumber(any)) return "number[]";
   }
-  
+
   return type;
 }
 
@@ -42,7 +43,7 @@ export function getIntermediateType (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isFunction (any) {
+export function isFunction(any) {
   return getType(any) === "function";
 }
 
@@ -52,7 +53,7 @@ export function isFunction (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isArray (any) {
+export function isArray(any) {
   return getType(any) === "array";
 }
 
@@ -63,14 +64,16 @@ export function isArray (any) {
  * @param {string} type - name of data type to checked
  * @returns {boolean}
  */
-export function arrayOfDataType (array, type) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  if (!isString(type)) throw new Error(`parameter 2 must string, '${ getType(type) }' given !`);
-  
+export function arrayOfDataType(array, type) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+  if (!isString(type))
+    throw new Error(`parameter 2 must string, '${getType(type)}' given !`);
+
   for (let item of array) {
     if (getType(item) !== type) return false;
   }
-  
+
   return true;
 }
 
@@ -80,9 +83,10 @@ export function arrayOfDataType (array, type) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfString (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfString(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "string");
 }
 
@@ -92,9 +96,10 @@ export function isArrayOfString (array) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfNumber (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfNumber(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "number");
 }
 
@@ -104,9 +109,10 @@ export function isArrayOfNumber (array) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfObject (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfObject(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "object");
 }
 
@@ -116,9 +122,10 @@ export function isArrayOfObject (array) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfArray (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfArray(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "array");
 }
 
@@ -128,9 +135,10 @@ export function isArrayOfArray (array) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfNull (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfNull(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "null");
 }
 
@@ -140,9 +148,10 @@ export function isArrayOfNull (array) {
  * @param {Array} array - the array whose item type data will be checked
  * @returns {boolean}
  */
-export function isArrayOfBoolean (array) {
-  if (!isArray(array)) throw new Error(`parameter 1 must array, '${ getType(array) }' given !`);
-  
+export function isArrayOfBoolean(array) {
+  if (!isArray(array))
+    throw new Error(`parameter 1 must array, '${getType(array)}' given !`);
+
   return arrayOfDataType(array, "boolean");
 }
 
@@ -152,7 +161,7 @@ export function isArrayOfBoolean (array) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isObject (any) {
+export function isObject(any) {
   return getType(any) === "object";
 }
 
@@ -162,7 +171,7 @@ export function isObject (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isNull (any) {
+export function isNull(any) {
   return getType(any) === "null";
 }
 
@@ -172,7 +181,7 @@ export function isNull (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isUndefined (any) {
+export function isUndefined(any) {
   return getType(any) === "undefined";
 }
 
@@ -182,7 +191,7 @@ export function isUndefined (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isBoolean (any) {
+export function isBoolean(any) {
   return getType(any) === "";
 }
 
@@ -202,7 +211,7 @@ export function isNumber(any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isInteger (any) {
+export function isInteger(any) {
   return getType(any) === "number" && any % 1 === 0;
 }
 
@@ -212,7 +221,7 @@ export function isInteger (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isFloat (any) {
+export function isFloat(any) {
   return getType(any) === "number" && any % 1 > 0;
 }
 
@@ -222,18 +231,19 @@ export function isFloat (any) {
  * @param {any} any - anyting to check the data type
  * @returns {boolean}
  */
-export function isString (any) {
+export function isString(any) {
   return getType(any) === "string";
 }
 
-export function isContainTypes (any, types) {
-  if (!["string", "array"].includes(getType(types))) throw `parameter 2 must be type string|array, '${ getType(types) }'' given !`;
-  
+export function isContainTypes(any, types) {
+  if (!["string", "array"].includes(getType(types)))
+    throw `parameter 2 must be type string|array, '${getType(types)}'' given !`;
+
   let dataTypes = [];
   let SPLITTER_REGEX = /(\||\,|\s)/g;
-  
+
   if (isString(types)) dataTypes = types.split(SPLITTER_REGEX);
   else dataTypes = types;
-  
+
   return dataTypes.includes(getIntermediateType(any));
 }

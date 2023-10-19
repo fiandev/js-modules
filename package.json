@@ -1,7 +1,7 @@
 {
   "name": "@fiandev/js-modules",
-  "version": "0.0.3",
-  "description": "a complex javascript kit and algorithm",
+  "version": "1.0.0",
+  "description": "A gathering Javascript Modules And Algorithm",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "type": "module",
@@ -12,7 +12,11 @@
     "build:browser": "npx babel src --out-dir dist/main --env-name browser",
     "build": "npm run build:module && npm run build:browser",
     "watch:build": "nodemon",
-    "jsdoc": "jsdoc -r ./src --destination ./docs"
+    "jsdoc": "jsdoc -r ./src --destination ./docs",
+    "prettier": "prettier ./src/**/**/* -w",
+    "prettier:test": "prettier ./__test__/**/*.js -w",
+    "prettier:dist": "prettier ./dist/**/*.js -w",
+    "prettier:docs": "prettier ./docs/**/*.{html,js,css} -w"
   },
   "repository": {
     "type": "git",
@@ -40,6 +44,7 @@
     "@babel/plugin-transform-class-properties": "^7.22.5",
     "@babel/preset-env": "^7.22.20",
     "babel-jest": "^29.7.0",
+    "babel-preset-minify": "^0.5.2",
     "jest": "^29.7.0",
     "jsdoc": "^4.0.2"
   },

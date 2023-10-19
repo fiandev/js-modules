@@ -9,11 +9,14 @@ import { typeErrorException } from "./exceptions.js";
  * @param {number} lineSpace - line space after enter
  * @returns {string} string of json
  */
-export function json_encode (any, replacer = null, lineSpace = 2) {
-  if (!["array", "object"].includes(getType(any))) throw typeErrorException(any, "array|object");
-  if (!["function", "null"].includes(getType(replacer))) throw typeErrorException(any, "function|null");
-  if (!isContainTypes(lineSpace, "number|integer")) throw typeErrorException(any, "function|null");
-  
+export function json_encode(any, replacer = null, lineSpace = 2) {
+  if (!["array", "object"].includes(getType(any)))
+    throw typeErrorException(any, "array|object");
+  if (!["function", "null"].includes(getType(replacer)))
+    throw typeErrorException(any, "function|null");
+  if (!isContainTypes(lineSpace, "number|integer"))
+    throw typeErrorException(any, "function|null");
+
   return JSON.stringify(any, replacer, lineSpace);
 }
 
@@ -23,9 +26,10 @@ export function json_encode (any, replacer = null, lineSpace = 2) {
  * @param {string} json - string of json tobe parsing
  * @returns {array|object} result of string of json parsing
  */
-export function json_decode (json) {
-  if (!["string"].includes(getType(json))) throw typeErrorException(json, "string");
-  
+export function json_decode(json) {
+  if (!["string"].includes(getType(json)))
+    throw typeErrorException(json, "string");
+
   try {
     return JSON.parse(json);
   } catch (err) {

@@ -1,5948 +1,2467 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>JSDoc: Global</title>
 
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
-</head>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="styles/prettify-tomorrow.css"
+    />
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="main">
+      <h1 class="page-title">Global</h1>
 
-<div id="main">
+      <section>
+        <header>
+          <h2></h2>
+        </header>
 
-    <h1 class="page-title">Global</h1>
+        <article>
+          <div class="container-overview">
+            <dl class="details"></dl>
+          </div>
 
-    
+          <h3 class="subsection-title">Methods</h3>
 
+          <h4 class="name" id="alphabetsfunctiontogeneratealphabets">
+            <span class="type-signature"></span>alphabets function to generate
+            alphabets<span class="signature">(options)</span
+            ><span class="type-signature"> &rarr; {string}</span>
+          </h4>
 
+          <h5>Parameters:</h5>
 
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
 
-<section>
+                <th>Type</th>
 
-<header>
-    
-        <h2></h2>
-        
-    
-</header>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
 
-<article>
-    <div class="container-overview">
-    
-        
+            <tbody>
+              <tr>
+                <td class="name"><code>options</code></td>
 
-        
+                <td class="type">
+                  <span class="param-type">Object</span>
+                </td>
 
+                <td class="description last">
+                  options to customize returned alphabets
+                  <h6>Properties</h6>
 
-<dl class="details">
+                  <table class="params">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
 
-    
+                        <th>Type</th>
 
-    
+                        <th class="last">Description</th>
+                      </tr>
+                    </thead>
 
-    
+                    <tbody>
+                      <tr>
+                        <td class="name"><code>except</code></td>
 
-    
+                        <td class="type">
+                          <span class="param-type">string</span>
+                          |
 
-    
+                          <span class="param-type">Array.&lt;string></span>
+                        </td>
 
-    
+                        <td class="description last">exception characters</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-    
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="string.js.html">string.js</a>,
+                  <a href="string.js.html#line22">line 22</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
 
-    
+          <h5>Returns:</h5>
 
-    
+          <div class="param-desc">string of alphabets</div>
 
-    
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">string</span>
+            </dd>
+          </dl>
 
-    
+          <h4 class="name" id="arrayNumbersfunctiontorandomizeiteminthearray">
+            <span class="type-signature"></span>arrayNumbers function to
+            randomize item in the array<span class="signature"
+              >(start, end)</span
+            ><span class="type-signature"> &rarr; {any}</span>
+          </h4>
 
-    
+          <h5>Parameters:</h5>
 
-    
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
 
-    
+                <th>Type</th>
 
-    
+                <th class="last">Description</th>
+              </tr>
+            </thead>
 
-    
-</dl>
+            <tbody>
+              <tr>
+                <td class="name"><code>start</code></td>
 
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
 
-        
-    
+                <td class="description last">the start number of iteration</td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>end</code></td>
+
+                <td class="type">
+                  <span class="param-type">nunber</span>
+                </td>
+
+                <td class="description last">the end number of iteration</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="number.js.html">number.js</a>,
+                  <a href="number.js.html#line4">line 4</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">random item on items</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">any</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="arrayOfDataTypefunctiontocheckifallitemsinthearrayishavesamedatatype"
+          >
+            <span class="type-signature"></span>arrayOfDataType function to
+            check if all items in the array is have same data type<span
+              class="signature"
+              >(array, type)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>type</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">name of data type to checked</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line59">line 59</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="arrayToStringfunctiontotransformarraytostring">
+            <span class="type-signature"></span>arrayToString function to
+            transform array to string<span class="signature">(arr)</span
+            ><span class="type-signature"> &rarr; {string}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>arr</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">array to transform</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="array.js.html">array.js</a>,
+                  <a href="array.js.html#line17">line 17</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">string of result</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">string</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="clearNecessarySpaceOnBacktickfunctiontoclearnecessaryspaceonmultilinebacktickstring"
+          >
+            <span class="type-signature"></span>clearNecessarySpaceOnBacktick
+            function to clear necessary space on multiline backtick string<span
+              class="signature"
+              >(str)</span
+            ><span class="type-signature"> &rarr; {string}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>str</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">string to clear their space</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="string.js.html">string.js</a>,
+                  <a href="string.js.html#line4">line 4</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">clear string after trimed</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">string</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="countArrayDimentionfunctiontocheckdimensionofthearray"
+          >
+            <span class="type-signature"></span>countArrayDimention function to
+            check dimension of the array<span class="signature">(array)</span
+            ><span class="type-signature"> &rarr; {number}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose dimension will be counted
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="array.js.html">array.js</a>,
+                  <a href="array.js.html#line46">line 46</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">total dimension of the array</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="deletefunctiontogetrandomstringwithspesificlengthofstring"
+          >
+            <span class="type-signature"></span>delete function to get random
+            string with spesific length of string<span class="signature"
+              >(object, props)</span
+            ><span class="type-signature"> &rarr; {Object}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>object</code></td>
+
+                <td class="type">
+                  <span class="param-type">Object</span>
+                </td>
+
+                <td class="description last">
+                  the object whose properties will be delete
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>props</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                  |
+
+                  <span class="param-type">Array.&lt;string></span>
+                </td>
+
+                <td class="description last">properties of object to delete</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="object.js.html">object.js</a>,
+                  <a href="object.js.html#line40">line 40</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">
+            object with properties that have been deleted
+          </div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Object</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="getTypefunctiontogetrealdatatype">
+            <span class="type-signature"></span>getType function to get real
+            data type<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {string}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line2">line 2</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">data type name</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">string</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="inArrayfunctiontocheckitemiscontainedinthearray">
+            <span class="type-signature"></span>inArray function to check item
+            is contained in the array<span class="signature"
+              >(needle, haystack)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>needle</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">
+                  anything to be contained in the array
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>haystack</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">the array with included items</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="array.js.html">array.js</a>,
+                  <a href="array.js.html#line29">line 29</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="invalidValueExceptionfunctiontogenerateexceptiononinvalidValue"
+          >
+            <span class="type-signature"></span>invalidValueException function
+            to generate exception on invalidValue<span class="signature"
+              >(expression)</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>expression</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">the string of logic expression</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="exceptions.js.html">exceptions.js</a>,
+                  <a href="exceptions.js.html#line36">line 36</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayfunctiontocheckthevariabletypeisarrayornot"
+          >
+            <span class="type-signature"></span>isArray function to check the
+            variable type is array or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line49">line 49</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfArrayfunctiontocheckallitemsinarrayhavestringdatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfArray function to check
+            all items in array have string data type or not<span
+              class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line113">line 113</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfBooleanfunctiontocheckallitemsinarrayhavebooleandatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfBoolean function to
+            check all items in array have boolean data type or not<span
+              class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line137">line 137</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfNullfunctiontocheckallitemsinarrayhavenulldatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfNull function to check
+            all items in array have null data type or not<span class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line125">line 125</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfNumberfunctiontocheckallitemsinarrayhavenumberdatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfNumber function to
+            check all items in array have number data type or not<span
+              class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line89">line 89</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfObjectfunctiontocheckallitemsinarrayhaveobjectdatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfObject function to
+            check all items in array have object data type or not<span
+              class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line101">line 101</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isArrayOfStringfunctiontocheckallitemsinarrayhavestringdatatypeornot"
+          >
+            <span class="type-signature"></span>isArrayOfString function to
+            check all items in array have string data type or not<span
+              class="signature"
+              >(array)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">
+                  the array whose item type data will be checked
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line77">line 77</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isBooleanfunctiontocheckthevariabletypeisbooleanornot"
+          >
+            <span class="type-signature"></span>isBoolean function to check the
+            variable type is boolean or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line179">line 179</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isFunctionfunctiontocheckthevariabletypeisfunctionornot"
+          >
+            <span class="type-signature"></span>isFunction function to check the
+            variable type is function or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line39">line 39</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="isIntegerfunctiontocheckthenumberisfloatornot">
+            <span class="type-signature"></span>isInteger function to check the
+            number is float or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line209">line 209</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="isIntegerfunctiontocheckthenumberisintegerornot">
+            <span class="type-signature"></span>isInteger function to check the
+            number is integer or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line199">line 199</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="isNullfunctiontocheckthevariabletypeisnullornot">
+            <span class="type-signature"></span>isNull function to check the
+            variable type is null or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line159">line 159</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="isNumberfunctiontocheckthevariabelisnumberornot">
+            <span class="type-signature"></span>isNumber function to check the
+            variabel is number or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line189">line 189</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isObjectfunctiontocheckthevariabletypeisobjectornot"
+          >
+            <span class="type-signature"></span>isObject function to check the
+            variable type is object or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line149">line 149</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isStringfunctiontocheckthevariabletypeisstringornot"
+          >
+            <span class="type-signature"></span>isString function to check the
+            variable type is string or not<span class="signature">(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line219">line 219</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="isUndefinedfunctiontocheckthevariabletypeisundefinedornot"
+          >
+            <span class="type-signature"></span>isUndefined function to check
+            the variable type is undefined or not<span class="signature"
+              >(any)</span
+            ><span class="type-signature"> &rarr; {boolean}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+
+                <td class="description last">anyting to check the data type</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="dataType.js.html">dataType.js</a>,
+                  <a href="dataType.js.html#line169">line 169</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">boolean</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="maxValueExceptionfunctiontogenerateexceptiononmaxValue"
+          >
+            <span class="type-signature"></span>maxValueException function to
+            generate exception on maxValue<span class="signature"
+              >(value, maxValue)</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>value</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">
+                  the value assigned to the function parameter
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>maxValue</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">
+                  maximum value that can be given
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="exceptions.js.html">exceptions.js</a>,
+                  <a href="exceptions.js.html#line20">line 20</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="objectKeysfunctiontogetallkeysoftheobject">
+            <span class="type-signature"></span>objectKeys function to get all
+            keys of the object<span class="signature">(object)</span
+            ><span class="type-signature"> &rarr; {Array}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>object</code></td>
+
+                <td class="type">
+                  <span class="param-type">Object</span>
+                </td>
+
+                <td class="description last">
+                  the object whose all keys will be gotten
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="object.js.html">object.js</a>,
+                  <a href="object.js.html#line4">line 4</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">array of object keys</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Array</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="objectValuesfunctiontogetallkeys&valuesoftheobject"
+          >
+            <span class="type-signature"></span>objectValues function to get all
+            keys & values of the object<span class="signature">(object)</span
+            ><span class="type-signature"> &rarr; {Array}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>object</code></td>
+
+                <td class="type">
+                  <span class="param-type">Object</span>
+                </td>
+
+                <td class="description last">
+                  the object whose all keys & values will be gotten
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="object.js.html">object.js</a>,
+                  <a href="object.js.html#line28">line 28</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">array of object keys & values</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Array</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="objectValuesfunctiontogetallvaluesoftheobject">
+            <span class="type-signature"></span>objectValues function to get all
+            values of the object<span class="signature">(object)</span
+            ><span class="type-signature"> &rarr; {Array}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>object</code></td>
+
+                <td class="type">
+                  <span class="param-type">Object</span>
+                </td>
+
+                <td class="description last">
+                  the object whose all values will be gotten
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="object.js.html">object.js</a>,
+                  <a href="object.js.html#line16">line 16</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">array of object values</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Array</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="randomIntegerfunctiontogetrandomintegerbetweenmin-maxvalue"
+          >
+            <span class="type-signature"></span>randomInteger function to get
+            random integer between min - max value<span class="signature"
+              >(min, max)</span
+            ><span class="type-signature"> &rarr; {number}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>min</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">
+                  minimal range of value to be randomize
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>max</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">
+                  maximal range of value to be randomize
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="random.js.html">random.js</a>,
+                  <a href="random.js.html#line19">line 19</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">
+            a integer that has been randomize by rules of range
+          </div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="randomStringfunctiontogetrandomstringwithspesificlengthofstring"
+          >
+            <span class="type-signature"></span>randomString function to get
+            random string with spesific length of string<span class="signature"
+              >(len, character)</span
+            ><span class="type-signature"> &rarr; {string}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>len</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">
+                  length of string to be generate
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>character</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">string format to randomize</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="random.js.html">random.js</a>,
+                  <a href="random.js.html#line34">line 34</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">string that has been randomize</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">string</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="randomizefunctiontorandomizeiteminthearray">
+            <span class="type-signature"></span>randomize function to randomize
+            item in the array<span class="signature">(items)</span
+            ><span class="type-signature"> &rarr; {any}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>items</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">items to randomize</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="random.js.html">random.js</a>,
+                  <a href="random.js.html#line7">line 7</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">random item on items</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">any</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="splitArrayfunctiontosplitanarrayintoseveralparts"
+          >
+            <span class="type-signature"></span>splitArray function to split an
+            array into several parts<span class="signature"
+              >(array, numberOfParts)</span
+            ><span class="type-signature"> &rarr; {Array}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>array</code></td>
+
+                <td class="type">
+                  <span class="param-type">Array</span>
+                </td>
+
+                <td class="description last">atray whole will be splitted</td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>numberOfParts</code></td>
+
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+
+                <td class="description last">number of parts</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="array.js.html">array.js</a>,
+                  <a href="array.js.html#line64">line 64</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">splitted array</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">Array</span>
+            </dd>
+          </dl>
+
+          <h4 class="name" id="stringToArrayfunctiontosplitstringtoarray">
+            <span class="type-signature"></span>stringToArray function to split
+            string to array<span class="signature"
+              >(str, splitter=<span class="signature-attributes">opt</span
+              >)</span
+            ><span class="type-signature"> &rarr; {any}</span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th>Attributes</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>str</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="attributes"></td>
+
+                <td class="description last">string to split</td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>splitter=</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="attributes">&lt;optional><br /></td>
+
+                <td class="description last">
+                  splitter - character to split the string to array
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="array.js.html">array.js</a>,
+                  <a href="array.js.html#line4">line 4</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+
+          <h5>Returns:</h5>
+
+          <div class="param-desc">random item on items</div>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">any</span>
+            </dd>
+          </dl>
+
+          <h4
+            class="name"
+            id="typeErrorExceptionfunctiontogenerateexceptionontypeError"
+          >
+            <span class="type-signature"></span>typeErrorException function to
+            generate exception on typeError<span class="signature"
+              >(any, dataType)</span
+            ><span class="type-signature"></span>
+          </h4>
+
+          <h5>Parameters:</h5>
+
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+
+                <th>Type</th>
+
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="name"><code>any</code></td>
+
+                <td class="type">
+                  <span class="param-type">Any</span>
+                </td>
+
+                <td class="description last">
+                  any variabel whole type will be checke
+                </td>
+              </tr>
+
+              <tr>
+                <td class="name"><code>dataType</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last">
+                  notify the data type that must be used
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <dl class="details">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="exceptions.js.html">exceptions.js</a>,
+                  <a href="exceptions.js.html#line4">line 4</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </article>
+      </section>
     </div>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="alphabetsfunctiontogeneratealphabets"><span class="type-signature"></span>alphabets
-function to generate alphabets<span class="signature">(options)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">options to customize returned alphabets
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>except</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-|
-
-<span class="param-type">Array.&lt;string></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">exception characters</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="string.js.html">string.js</a>, <a href="string.js.html#line22">line 22</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    string of alphabets
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="arrayNumbersfunctiontorandomizeiteminthearray"><span class="type-signature"></span>arrayNumbers
-function to randomize item in the array<span class="signature">(start, end)</span><span class="type-signature"> &rarr; {any}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>start</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the start number of iteration</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>end</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">nunber</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the end number of iteration</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="number.js.html">number.js</a>, <a href="number.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    random item on items
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">any</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="arrayOfDataTypefunctiontocheckifallitemsinthearrayishavesamedatatype"><span class="type-signature"></span>arrayOfDataType
-function to check if all items in the array is have same data type<span class="signature">(array, type)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">name of data type to checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line59">line 59</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="arrayToStringfunctiontotransformarraytostring"><span class="type-signature"></span>arrayToString
-function to transform array to string<span class="signature">(arr)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>arr</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">array to transform</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    string of result
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="clearNecessarySpaceOnBacktickfunctiontoclearnecessaryspaceonmultilinebacktickstring"><span class="type-signature"></span>clearNecessarySpaceOnBacktick
-function to clear necessary space on multiline backtick string<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>str</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">string to clear their space</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="string.js.html">string.js</a>, <a href="string.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    clear string after trimed
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="countArrayDimentionfunctiontocheckdimensionofthearray"><span class="type-signature"></span>countArrayDimention
-function to check dimension of the array<span class="signature">(array)</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose dimension will be counted</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line46">line 46</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    total dimension of the array
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="deletefunctiontogetrandomstringwithspesificlengthofstring"><span class="type-signature"></span>delete
-function to get random string with spesific length of string<span class="signature">(object, props)</span><span class="type-signature"> &rarr; {Object}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the object whose properties will be delete</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>props</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-|
-
-<span class="param-type">Array.&lt;string></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">properties of object to delete</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="object.js.html">object.js</a>, <a href="object.js.html#line40">line 40</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    object with properties that have been deleted
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="getTypefunctiontogetrealdatatype"><span class="type-signature"></span>getType
-function to get real data type<span class="signature">(any)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line2">line 2</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    data type name
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="inArrayfunctiontocheckitemiscontainedinthearray"><span class="type-signature"></span>inArray
-function to check item is contained in the array<span class="signature">(needle, haystack)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>needle</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anything to be contained in the array</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>haystack</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array with included items</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line29">line 29</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="invalidValueExceptionfunctiontogenerateexceptiononinvalidValue"><span class="type-signature"></span>invalidValueException
-function to generate exception on invalidValue<span class="signature">(expression)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>expression</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the string of logic expression</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="exceptions.js.html">exceptions.js</a>, <a href="exceptions.js.html#line36">line 36</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayfunctiontocheckthevariabletypeisarrayornot"><span class="type-signature"></span>isArray
-function to check the variable type is array or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line49">line 49</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfArrayfunctiontocheckallitemsinarrayhavestringdatatypeornot"><span class="type-signature"></span>isArrayOfArray
-function to check all items in array have string data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line113">line 113</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfBooleanfunctiontocheckallitemsinarrayhavebooleandatatypeornot"><span class="type-signature"></span>isArrayOfBoolean
-function to check all items in array have boolean data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line137">line 137</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfNullfunctiontocheckallitemsinarrayhavenulldatatypeornot"><span class="type-signature"></span>isArrayOfNull
-function to check all items in array have null data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line125">line 125</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfNumberfunctiontocheckallitemsinarrayhavenumberdatatypeornot"><span class="type-signature"></span>isArrayOfNumber
-function to check all items in array have number data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line89">line 89</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfObjectfunctiontocheckallitemsinarrayhaveobjectdatatypeornot"><span class="type-signature"></span>isArrayOfObject
-function to check all items in array have object data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line101">line 101</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isArrayOfStringfunctiontocheckallitemsinarrayhavestringdatatypeornot"><span class="type-signature"></span>isArrayOfString
-function to check all items in array have string data type or not<span class="signature">(array)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the array whose item type data will be checked</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line77">line 77</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isBooleanfunctiontocheckthevariabletypeisbooleanornot"><span class="type-signature"></span>isBoolean
-function to check the variable type is boolean or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line179">line 179</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isFunctionfunctiontocheckthevariabletypeisfunctionornot"><span class="type-signature"></span>isFunction
-function to check the variable type is function or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line39">line 39</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isIntegerfunctiontocheckthenumberisfloatornot"><span class="type-signature"></span>isInteger
-function to check the number is float or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line209">line 209</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isIntegerfunctiontocheckthenumberisintegerornot"><span class="type-signature"></span>isInteger
-function to check the number is integer or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line199">line 199</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isNullfunctiontocheckthevariabletypeisnullornot"><span class="type-signature"></span>isNull
-function to check the variable type is null or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line159">line 159</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isNumberfunctiontocheckthevariabelisnumberornot"><span class="type-signature"></span>isNumber
-function to check the variabel is number or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line189">line 189</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isObjectfunctiontocheckthevariabletypeisobjectornot"><span class="type-signature"></span>isObject
-function to check the variable type is object or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line149">line 149</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isStringfunctiontocheckthevariabletypeisstringornot"><span class="type-signature"></span>isString
-function to check the variable type is string or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line219">line 219</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="isUndefinedfunctiontocheckthevariabletypeisundefinedornot"><span class="type-signature"></span>isUndefined
-function to check the variable type is undefined or not<span class="signature">(any)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">anyting to check the data type</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="dataType.js.html">dataType.js</a>, <a href="dataType.js.html#line169">line 169</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">boolean</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="maxValueExceptionfunctiontogenerateexceptiononmaxValue"><span class="type-signature"></span>maxValueException
-function to generate exception on maxValue<span class="signature">(value, maxValue)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>value</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the value assigned to the function parameter</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>maxValue</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">maximum value that can be given</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="exceptions.js.html">exceptions.js</a>, <a href="exceptions.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="objectKeysfunctiontogetallkeysoftheobject"><span class="type-signature"></span>objectKeys
-function to get all keys of the object<span class="signature">(object)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the object whose all keys will be gotten</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="object.js.html">object.js</a>, <a href="object.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    array of object keys
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="objectValuesfunctiontogetallkeys&valuesoftheobject"><span class="type-signature"></span>objectValues
-function to get all keys & values of the object<span class="signature">(object)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the object whose all keys & values will be gotten</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="object.js.html">object.js</a>, <a href="object.js.html#line28">line 28</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    array of object keys & values
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="objectValuesfunctiontogetallvaluesoftheobject"><span class="type-signature"></span>objectValues
-function to get all values of the object<span class="signature">(object)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>object</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the object whose all values will be gotten</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="object.js.html">object.js</a>, <a href="object.js.html#line16">line 16</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    array of object values
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="randomIntegerfunctiontogetrandomintegerbetweenmin-maxvalue"><span class="type-signature"></span>randomInteger
-function to get random integer between min - max value<span class="signature">(min, max)</span><span class="type-signature"> &rarr; {number}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>min</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">minimal range of value to be randomize</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>max</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">maximal range of value to be randomize</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="random.js.html">random.js</a>, <a href="random.js.html#line19">line 19</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    a integer that has been randomize by rules of range
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">number</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="randomStringfunctiontogetrandomstringwithspesificlengthofstring"><span class="type-signature"></span>randomString
-function to get random string with spesific length of string<span class="signature">(len, character)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>len</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">length of string to be generate</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>character</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">string format to randomize</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="random.js.html">random.js</a>, <a href="random.js.html#line34">line 34</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    string that has been randomize
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="randomizefunctiontorandomizeiteminthearray"><span class="type-signature"></span>randomize
-function to randomize item in the array<span class="signature">(items)</span><span class="type-signature"> &rarr; {any}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>items</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">items to randomize</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="random.js.html">random.js</a>, <a href="random.js.html#line7">line 7</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    random item on items
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">any</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="splitArrayfunctiontosplitanarrayintoseveralparts"><span class="type-signature"></span>splitArray
-function to split an array into several parts<span class="signature">(array, numberOfParts)</span><span class="type-signature"> &rarr; {Array}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>array</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">atray whole will be splitted</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>numberOfParts</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">number of parts</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line64">line 64</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    splitted array
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Array</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="stringToArrayfunctiontosplitstringtoarray"><span class="type-signature"></span>stringToArray
-function to split string to array<span class="signature">(str, splitter=<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {any}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>str</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">string to split</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>splitter=</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">splitter - character to split the string to array</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array.js.html">array.js</a>, <a href="array.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    random item on items
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">any</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="typeErrorExceptionfunctiontogenerateexceptionontypeError"><span class="type-signature"></span>typeErrorException
-function to generate exception on typeError<span class="signature">(any, dataType)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>any</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Any</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">any variabel whole type will be checke</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>dataType</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">notify the data type that must be used</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="exceptions.js.html">exceptions.js</a>, <a href="exceptions.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
-
-
-
-
-</div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#alphabetsfunctiontogeneratealphabets">alphabets
-function to generate alphabets</a></li><li><a href="global.html#arrayNumbersfunctiontorandomizeiteminthearray">arrayNumbers
-function to randomize item in the array</a></li><li><a href="global.html#arrayOfDataTypefunctiontocheckifallitemsinthearrayishavesamedatatype">arrayOfDataType
-function to check if all items in the array is have same data type</a></li><li><a href="global.html#arrayToStringfunctiontotransformarraytostring">arrayToString
-function to transform array to string</a></li><li><a href="global.html#clearNecessarySpaceOnBacktickfunctiontoclearnecessaryspaceonmultilinebacktickstring">clearNecessarySpaceOnBacktick
-function to clear necessary space on multiline backtick string</a></li><li><a href="global.html#countArrayDimentionfunctiontocheckdimensionofthearray">countArrayDimention
-function to check dimension of the array</a></li><li><a href="global.html#deletefunctiontogetrandomstringwithspesificlengthofstring">delete
-function to get random string with spesific length of string</a></li><li><a href="global.html#getTypefunctiontogetrealdatatype">getType
-function to get real data type</a></li><li><a href="global.html#inArrayfunctiontocheckitemiscontainedinthearray">inArray
-function to check item is contained in the array</a></li><li><a href="global.html#invalidValueExceptionfunctiontogenerateexceptiononinvalidValue">invalidValueException
-function to generate exception on invalidValue</a></li><li><a href="global.html#isArrayfunctiontocheckthevariabletypeisarrayornot">isArray
-function to check the variable type is array or not</a></li><li><a href="global.html#isArrayOfArrayfunctiontocheckallitemsinarrayhavestringdatatypeornot">isArrayOfArray
-function to check all items in array have string data type or not</a></li><li><a href="global.html#isArrayOfBooleanfunctiontocheckallitemsinarrayhavebooleandatatypeornot">isArrayOfBoolean
-function to check all items in array have boolean data type or not</a></li><li><a href="global.html#isArrayOfNullfunctiontocheckallitemsinarrayhavenulldatatypeornot">isArrayOfNull
-function to check all items in array have null data type or not</a></li><li><a href="global.html#isArrayOfNumberfunctiontocheckallitemsinarrayhavenumberdatatypeornot">isArrayOfNumber
-function to check all items in array have number data type or not</a></li><li><a href="global.html#isArrayOfObjectfunctiontocheckallitemsinarrayhaveobjectdatatypeornot">isArrayOfObject
-function to check all items in array have object data type or not</a></li><li><a href="global.html#isArrayOfStringfunctiontocheckallitemsinarrayhavestringdatatypeornot">isArrayOfString
-function to check all items in array have string data type or not</a></li><li><a href="global.html#isBooleanfunctiontocheckthevariabletypeisbooleanornot">isBoolean
-function to check the variable type is boolean or not</a></li><li><a href="global.html#isFunctionfunctiontocheckthevariabletypeisfunctionornot">isFunction
-function to check the variable type is function or not</a></li><li><a href="global.html#isIntegerfunctiontocheckthenumberisfloatornot">isInteger
-function to check the number is float or not</a></li><li><a href="global.html#isIntegerfunctiontocheckthenumberisintegerornot">isInteger
-function to check the number is integer or not</a></li><li><a href="global.html#isNullfunctiontocheckthevariabletypeisnullornot">isNull
-function to check the variable type is null or not</a></li><li><a href="global.html#isNumberfunctiontocheckthevariabelisnumberornot">isNumber
-function to check the variabel is number or not</a></li><li><a href="global.html#isObjectfunctiontocheckthevariabletypeisobjectornot">isObject
-function to check the variable type is object or not</a></li><li><a href="global.html#isStringfunctiontocheckthevariabletypeisstringornot">isString
-function to check the variable type is string or not</a></li><li><a href="global.html#isUndefinedfunctiontocheckthevariabletypeisundefinedornot">isUndefined
-function to check the variable type is undefined or not</a></li><li><a href="global.html#maxValueExceptionfunctiontogenerateexceptiononmaxValue">maxValueException
-function to generate exception on maxValue</a></li><li><a href="global.html#objectKeysfunctiontogetallkeysoftheobject">objectKeys
-function to get all keys of the object</a></li><li><a href="global.html#objectValuesfunctiontogetallkeys&valuesoftheobject">objectValues
-function to get all keys & values of the object</a></li><li><a href="global.html#objectValuesfunctiontogetallvaluesoftheobject">objectValues
-function to get all values of the object</a></li><li><a href="global.html#randomIntegerfunctiontogetrandomintegerbetweenmin-maxvalue">randomInteger
-function to get random integer between min - max value</a></li><li><a href="global.html#randomStringfunctiontogetrandomstringwithspesificlengthofstring">randomString
-function to get random string with spesific length of string</a></li><li><a href="global.html#randomizefunctiontorandomizeiteminthearray">randomize
-function to randomize item in the array</a></li><li><a href="global.html#splitArrayfunctiontosplitanarrayintoseveralparts">splitArray
-function to split an array into several parts</a></li><li><a href="global.html#stringToArrayfunctiontosplitstringtoarray">stringToArray
-function to split string to array</a></li><li><a href="global.html#typeErrorExceptionfunctiontogenerateexceptionontypeError">typeErrorException
-function to generate exception on typeError</a></li></ul>
-</nav>
-
-<br class="clear">
-
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Sep 30 2023 14:28:43 GMT+0700 (Western Indonesia Time)
-</footer>
-
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
-</body>
+    <nav>
+      <h2><a href="index.html">Home</a></h2>
+      <h3>Global</h3>
+      <ul>
+        <li>
+          <a href="global.html#alphabetsfunctiontogeneratealphabets"
+            >alphabets function to generate alphabets</a
+          >
+        </li>
+        <li>
+          <a href="global.html#arrayNumbersfunctiontorandomizeiteminthearray"
+            >arrayNumbers function to randomize item in the array</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#arrayOfDataTypefunctiontocheckifallitemsinthearrayishavesamedatatype"
+            >arrayOfDataType function to check if all items in the array is have
+            same data type</a
+          >
+        </li>
+        <li>
+          <a href="global.html#arrayToStringfunctiontotransformarraytostring"
+            >arrayToString function to transform array to string</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#clearNecessarySpaceOnBacktickfunctiontoclearnecessaryspaceonmultilinebacktickstring"
+            >clearNecessarySpaceOnBacktick function to clear necessary space on
+            multiline backtick string</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#countArrayDimentionfunctiontocheckdimensionofthearray"
+            >countArrayDimention function to check dimension of the array</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#deletefunctiontogetrandomstringwithspesificlengthofstring"
+            >delete function to get random string with spesific length of
+            string</a
+          >
+        </li>
+        <li>
+          <a href="global.html#getTypefunctiontogetrealdatatype"
+            >getType function to get real data type</a
+          >
+        </li>
+        <li>
+          <a href="global.html#inArrayfunctiontocheckitemiscontainedinthearray"
+            >inArray function to check item is contained in the array</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#invalidValueExceptionfunctiontogenerateexceptiononinvalidValue"
+            >invalidValueException function to generate exception on
+            invalidValue</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayfunctiontocheckthevariabletypeisarrayornot"
+            >isArray function to check the variable type is array or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfArrayfunctiontocheckallitemsinarrayhavestringdatatypeornot"
+            >isArrayOfArray function to check all items in array have string
+            data type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfBooleanfunctiontocheckallitemsinarrayhavebooleandatatypeornot"
+            >isArrayOfBoolean function to check all items in array have boolean
+            data type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfNullfunctiontocheckallitemsinarrayhavenulldatatypeornot"
+            >isArrayOfNull function to check all items in array have null data
+            type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfNumberfunctiontocheckallitemsinarrayhavenumberdatatypeornot"
+            >isArrayOfNumber function to check all items in array have number
+            data type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfObjectfunctiontocheckallitemsinarrayhaveobjectdatatypeornot"
+            >isArrayOfObject function to check all items in array have object
+            data type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isArrayOfStringfunctiontocheckallitemsinarrayhavestringdatatypeornot"
+            >isArrayOfString function to check all items in array have string
+            data type or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isBooleanfunctiontocheckthevariabletypeisbooleanornot"
+            >isBoolean function to check the variable type is boolean or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isFunctionfunctiontocheckthevariabletypeisfunctionornot"
+            >isFunction function to check the variable type is function or
+            not</a
+          >
+        </li>
+        <li>
+          <a href="global.html#isIntegerfunctiontocheckthenumberisfloatornot"
+            >isInteger function to check the number is float or not</a
+          >
+        </li>
+        <li>
+          <a href="global.html#isIntegerfunctiontocheckthenumberisintegerornot"
+            >isInteger function to check the number is integer or not</a
+          >
+        </li>
+        <li>
+          <a href="global.html#isNullfunctiontocheckthevariabletypeisnullornot"
+            >isNull function to check the variable type is null or not</a
+          >
+        </li>
+        <li>
+          <a href="global.html#isNumberfunctiontocheckthevariabelisnumberornot"
+            >isNumber function to check the variabel is number or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isObjectfunctiontocheckthevariabletypeisobjectornot"
+            >isObject function to check the variable type is object or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isStringfunctiontocheckthevariabletypeisstringornot"
+            >isString function to check the variable type is string or not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#isUndefinedfunctiontocheckthevariabletypeisundefinedornot"
+            >isUndefined function to check the variable type is undefined or
+            not</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#maxValueExceptionfunctiontogenerateexceptiononmaxValue"
+            >maxValueException function to generate exception on maxValue</a
+          >
+        </li>
+        <li>
+          <a href="global.html#objectKeysfunctiontogetallkeysoftheobject"
+            >objectKeys function to get all keys of the object</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#objectValuesfunctiontogetallkeys&valuesoftheobject"
+            >objectValues function to get all keys & values of the object</a
+          >
+        </li>
+        <li>
+          <a href="global.html#objectValuesfunctiontogetallvaluesoftheobject"
+            >objectValues function to get all values of the object</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#randomIntegerfunctiontogetrandomintegerbetweenmin-maxvalue"
+            >randomInteger function to get random integer between min - max
+            value</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#randomStringfunctiontogetrandomstringwithspesificlengthofstring"
+            >randomString function to get random string with spesific length of
+            string</a
+          >
+        </li>
+        <li>
+          <a href="global.html#randomizefunctiontorandomizeiteminthearray"
+            >randomize function to randomize item in the array</a
+          >
+        </li>
+        <li>
+          <a href="global.html#splitArrayfunctiontosplitanarrayintoseveralparts"
+            >splitArray function to split an array into several parts</a
+          >
+        </li>
+        <li>
+          <a href="global.html#stringToArrayfunctiontosplitstringtoarray"
+            >stringToArray function to split string to array</a
+          >
+        </li>
+        <li>
+          <a
+            href="global.html#typeErrorExceptionfunctiontogenerateexceptionontypeError"
+            >typeErrorException function to generate exception on typeError</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <br class="clear" />
+
+    <footer>
+      Documentation generated by
+      <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Sat Sep 30
+      2023 14:28:43 GMT+0700 (Western Indonesia Time)
+    </footer>
+
+    <script>
+      prettyPrint();
+    </script>
+    <script src="scripts/linenumber.js"></script>
+  </body>
 </html>
