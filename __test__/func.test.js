@@ -1,11 +1,15 @@
 import { describe, test, expect } from "@jest/globals";
 import modules from "../src/index.js";
 
-const { isFloat, isInteger, isArray } = modules;
+const { getType, isFloat, isInteger, isArray } = modules;
 
 describe("unit tests for isFloat function", function () {
   test("check 1.1 with isFloat function", function () {
     expect(isFloat(1.1)).toBe(true);
+  });
+  
+  test("check null data type with function getType", function () {
+    expect(getType(null)).toBe("null");
   });
   
   test("check 1 with isFloat function", function () {

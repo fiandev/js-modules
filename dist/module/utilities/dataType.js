@@ -217,7 +217,7 @@ export function isContainTypes(any, types) {
   if (!["string", "array"].includes(getType(types))) throw `parameter 2 must be type string|array, '${getType(types)}'' given !`;
   let dataTypes = [];
   let SPLITTER_REGEX = /(\||\,|\s)/g;
-  if (!isString(types)) dataTypes = types.split(SPLITTER_REGEX);
+  if (isString(types)) dataTypes = types.split(SPLITTER_REGEX);else dataTypes = types;
   return dataTypes.includes(getIntermediateType(any));
 }
 //# sourceMappingURL=dataType.js.map

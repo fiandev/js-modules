@@ -232,7 +232,8 @@ export function isContainTypes (any, types) {
   let dataTypes = [];
   let SPLITTER_REGEX = /(\||\,|\s)/g;
   
-  if (!isString(types)) dataTypes = types.split(SPLITTER_REGEX);
+  if (isString(types)) dataTypes = types.split(SPLITTER_REGEX);
+  else dataTypes = types;
   
   return dataTypes.includes(getIntermediateType(any));
 }

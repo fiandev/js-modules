@@ -10,8 +10,9 @@ var numberUtils = _interopRequireWildcard(require("./utilities/number.js"));
 var randomUtils = _interopRequireWildcard(require("./utilities/random.js"));
 var objectUtils = _interopRequireWildcard(require("./utilities/object.js"));
 var dataTypeUtils = _interopRequireWildcard(require("./utilities/dataType.js"));
-var exceptions = _interopRequireWildcard(require("./utilities/exceptions.js"));
+var jsonUtils = _interopRequireWildcard(require("./utilities/json.js"));
 var utils = _interopRequireWildcard(require("./utilities/functions.js"));
+var exceptions = _interopRequireWildcard(require("./utilities/exceptions.js"));
 var _Tuple = _interopRequireDefault(require("./lib/Tuple.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -22,7 +23,7 @@ function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t =
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-var _default = exports["default"] = _objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread({}, arrayUtils), stringUtils), numberUtils), randomUtils), objectUtils), dataTypeUtils), exceptions), utils), {}, {
+var _default = exports["default"] = _objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread({}, arrayUtils), stringUtils), numberUtils), randomUtils), objectUtils), dataTypeUtils), jsonUtils), exceptions), utils), {}, {
   Tuple: _Tuple["default"]
 });
 //# sourceMappingURL=index.js.map

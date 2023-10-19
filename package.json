@@ -1,6 +1,6 @@
 {
   "name": "@fiandev/js-modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a complex javascript kit and algorithm",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
@@ -44,8 +44,8 @@
     "jsdoc": "^4.0.2"
   },
   "files": [
-    "build/main",
-    "build/module",
+    "build/main/**/*.js",
+    "build/module/**/*.js",
     "!**/*.test.*",
     "CHANGELOG.md",
     "LICENSE",
