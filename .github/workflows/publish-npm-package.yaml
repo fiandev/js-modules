@@ -21,11 +21,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
         
-      - name: Unit Tests
-        run: npm run test
-        
       - name: Build
         run: npm run build
+
+      - name: Unit Tests
+        run: npm run test
 
       - name: Publish To NPM
         run: |
