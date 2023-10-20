@@ -1,5 +1,6 @@
 import { describe, test, expect } from "@jest/globals";
-import modules from "../dist/module/index.js";
+import * as modules from "@fiandev/js-modules";
+// import modules from "../dist/module/index.js";
 
 const { getType, isFloat, isInteger, isArray } = modules;
 
