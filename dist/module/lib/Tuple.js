@@ -1,1 +1,0 @@
-import{isUndefined}from"../utilities/dataType.js";import{inArray}from"../utilities/array.js";export default class Tuple{constructor(...a){this.values=[];let b=[];for(let c of a)inArray(c,b)||(this.values.push(c),b.push(c))}reset(){return this.values=[],this.values}copy(){return this}reverse(){return this.values.reverse(),this.values}}
