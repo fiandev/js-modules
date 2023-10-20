@@ -20,7 +20,9 @@
       ],
       "plugins": [
         "@babel/plugin-syntax-object-rest-spread",
-        "@babel/plugin-transform-class-properties"
+        "@babel/plugin-transform-class-properties",
+        ["replace-import-extension", { "extMapping": { ".js": ".cjs"}}],
+        ["@babel/transform-modules-commonjs"]
       ]
     },
     "module": {
@@ -34,7 +36,9 @@
       ],
       "plugins": [
         "@babel/plugin-syntax-object-rest-spread",
-        "@babel/plugin-transform-class-properties"
+        "@babel/plugin-transform-class-properties",
+        ["replace-import-extension", { "extMapping": { ".js": ".mjs"}}],
+        ["@babel/transform-modules-commonjs"]
       ]
     }
   },
