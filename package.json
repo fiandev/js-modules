@@ -1,6 +1,6 @@
 {
   "name": "@fiandev/js-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A gathering Javascript Modules And Algorithm",
   "main": "dist/main/index.cjs",
   "module": "dist/module/index.mjs",
