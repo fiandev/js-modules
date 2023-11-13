@@ -1,47 +1,26 @@
 {
-  "env": {
-    "browser": {
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "targets": {
-              "browsers": "last 100 versions, ie 10-11"
-            },
-            "modules": "commonjs"
-          }
-        ],
-        [
-          "minify",
-          {
-            "keepFnName": true
-          }
-        ]
-      ],
-      "plugins": [
-        "@babel/plugin-syntax-object-rest-spread",
-        "@babel/plugin-transform-class-properties",
-        ["replace-import-extension", { "extMapping": { ".js": ".cjs"}}],
-        ["@babel/transform-modules-commonjs"]
-      ]
-    },
-    "module": {
-      "presets": [
-        [
-          "minify",
-          {
-            "keepFnName": true
-          }
-        ]
-      ],
-      "plugins": [
-        "@babel/plugin-syntax-object-rest-spread",
-        "@babel/plugin-transform-class-properties",
-        ["replace-import-extension", { "extMapping": { ".js": ".mjs"}}],
-        ["@babel/transform-modules-commonjs"]
-      ]
-    }
-  },
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "last 100 versions, ie 10-11"
+        },
+        "modules": "commonjs"
+      }
+    ],
+    [
+      "minify",
+      {
+        "keepFnName": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-object-rest-spread",
+    "@babel/plugin-transform-class-properties",
+    ["@babel/transform-modules-commonjs"]
+  ],
   "sourceMaps": true,
   "comments": false
 }

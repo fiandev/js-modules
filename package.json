@@ -8,9 +8,7 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest ./__test__/",
     "watch:test": "node --experimental-vm-modules node_modules/jest/bin/jest --watchAll",
-    "build:module": "npx babel src --out-dir dist/module --env-name module --out-file-extension .mjs",
-    "build:browser": "npx babel src --out-dir dist/main --env-name browser --out-file-extension .cjs",
-    "build": "npm run build:module && npm run build:browser",
+    "build": "npx babel src --out-dir dist dist",
     "watch:build": "nodemon",
     "jsdoc": "jsdoc -r ./src --destination ./docs",
     "prettier": "prettier ./src/**/**/* -w",
