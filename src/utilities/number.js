@@ -1,4 +1,4 @@
-import { getType } from "./dataType.js";
+import { getType, isFloat } from "./dataType.js";
 import {
   typeErrorException,
   invalidValueException,
@@ -27,4 +27,46 @@ export function arrayNumbers(start, end) {
   }
 
   return integers;
+}
+
+/**
+ * @function isEven
+ * function to check number is even or not
+ * @param {string} number - number to check
+ * @returns {boolean} result of checking number
+ */
+export function isEven (number) {
+  if (getType(number) !== "number") throw typeErrorException(number, "number");
+  return number % 2 === 0;
+}
+
+/**
+ * @function isOdd
+ * function to check number is odd or not
+ * @param {string} number - number to check
+ * @returns {boolean} result of checking number
+ */
+export function isOdd (number) {
+  if (getType(number) !== "number") throw typeErrorException(number, "number");
+  return number % 2 === 0;
+}
+
+/**
+ * @function isPrime
+ * function to check number is odd or not
+ * @param {string} number - number to check
+ * @returns {boolean} result of checking number
+ */
+function isPrime(number) {
+  if (getType(number) !== "number" || isFloat(number)) throw typeErrorException(number, "number");
+  if (number <= 1) return false;
+  if (number <= 3) return true;
+
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
 }

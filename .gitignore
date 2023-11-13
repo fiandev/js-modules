@@ -1,6 +1,7 @@
 /node_modules
 /dist
 
+CHANGELOG.local.md
 .env
 .env.local
 .env.development
