@@ -29,8 +29,9 @@ export function clearNecessarySpaceOnBacktick(str) {
  * @param {(string|string[])} options.except - exception characters
  * @returns {string} string of alphabets
  */
-export function alphabets({ except }) {
-  if (getType(except) !== "string" || getType(except) !== "array")
+export function alphabets(args = {}) {
+  const { except = [] } = args;
+  if (getType(except) !== "string" && getType(except) !== "array")
     throw typeErrorException(except, "string | array");
 
   let result = "";

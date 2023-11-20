@@ -2,14 +2,14 @@ import { isUndefined } from "../utilities/dataType.js";
 import { inArray } from "../utilities/array.js";
 
 export default class Tuple {
-  constructor(...anythings) {
+  constructor(...items) {
     this.values = [];
 
     let dumpValues = [];
-    for (let anything of anythings) {
-      if (!inArray(anything, dumpValues)) {
-        this.values.push(anything);
-        dumpValues.push(anything);
+    for (let item of items) {
+      if (!inArray(item, dumpValues)) {
+        this.values.push(item);
+        dumpValues.push(item);
       }
     }
   }

@@ -1,5 +1,5 @@
 import { alphabets } from "./string.js";
-import { arrayToString } from "./array.js";
+import { arrayToString, stringToArray } from "./array.js";
 import { arrayNumbers } from "./number.js";
 import { getType, isArray, isNumber } from "./dataType.js";
 import { typeErrorException } from "./exceptions.js";
@@ -61,7 +61,7 @@ export function randomString(len = 1) {
   let _numbers = arrayToString(arrayNumbers(0, 9), "");
   let characters = stringToArray(_alphabets + _numbers, "");
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < len; i++) {
     result += randomize(characters);
   }
 

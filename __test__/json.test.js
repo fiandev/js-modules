@@ -9,13 +9,13 @@ let obj = {
 }
 
 describe("unit tests for json utilities", function () {
-  let a = json_encode(obj);
+  let encoded = json_encode(obj);
   
   test("encoding object to json", function () {
-    expect(typeof a).toBe("string");
+    expect(typeof encoded).toBe("string");
   });
   
   test("decoding json to object", function () {
-    expect(json_decode(a)).toEqual(obj);
+    expect(json_decode(encoded)).toEqual(obj);
   });
 });

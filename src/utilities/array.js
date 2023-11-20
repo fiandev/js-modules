@@ -21,7 +21,7 @@ export function stringToArray(str, splitter = "") {
  * @returns {string} string of result
  */
 export function arrayToString(arr) {
-  if (getType(except) !== "array") throw typeErrorException(arr, "array");
+  if (getType(arr) !== "array") throw typeErrorException(arr, "array");
 
   return arr.toString().replace(/\,/g, "");
 }
